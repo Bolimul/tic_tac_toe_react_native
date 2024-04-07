@@ -16,7 +16,7 @@ const Item: FC<{kind: boolean, player: boolean, item_id: number, onItemSelected:
         onItemSelected(player, item_id)
     }
     return(
-        <TouchableOpacity style={styles.item} onPress={onPress}>
+        <TouchableOpacity onPress={onPress}>
             <Image style={styles.item} source={choosePicture(kind)}/>
         </TouchableOpacity>    
     )

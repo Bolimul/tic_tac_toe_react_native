@@ -7,7 +7,7 @@ const ItemRow: FC<{sqArr: Square[], gameLayout: Array<boolean>, player: boolean,
 ({sqArr, gameLayout, player, onItemSelected}) => {
 
     return(
-        <FlatList
+            <FlatList
             data={sqArr}
             horizontal={true}
             keyExtractor={(item) => item._id}
